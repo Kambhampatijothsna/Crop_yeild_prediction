@@ -110,7 +110,7 @@ The best-performing model was selected based on the highest **R² Score** and lo
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Kambhampatijothsna/crop_yeild.git
+git clone https://github.com/Kambhampatijothsna/Crop_yeild_prediction.git
 ```
 
 ### 2️⃣ Navigate to the Project Folder
