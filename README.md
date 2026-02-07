@@ -58,10 +58,6 @@ The following regression models were trained and compared:
 - K-Nearest Neighbors (KNN)  
 - Decision Tree Regressor  
 - Bagging Regressor  
-- Bayesian Ridge Regression  
-- Linear Regression (if included)  
-- Ridge / Lasso Regression (if included)  
-
 ---
 
 ## 📊 Model Evaluation Metrics
@@ -95,11 +91,15 @@ The best-performing model was selected based on the highest **R² Score** and lo
 
 ### Example Model Comparison Table
 
-| Model | MAE | RMSE | R² Score |
-|------|------|------|----------|
-| Random Forest | 3713.40 | 9384.34 | 0.9877 |
-| Bayesian Ridge | 3990.92 | 10136.62 | 0.9857 |
-| KNN | 4611.26 | 10396.80 | 0.9849 |
+## 📊 Model Performance Comparison
+
+| Model | MAE | MSE | RMSE | R² Score |
+|------|------|------|------|----------|
+| RF (Random Forest) | 3724.907174 | 9.117071e+07 | 9548.335710 | 0.987323 |
+| BR (Bayesian Ridge) | 3990.251417 | 9.680531e+07 | 9838.968702 | 0.986540 |
+| KNN | 4611.269096 | 1.080935e+08 | 10396.800375 | 0.984970 |
+| DT (Decision Tree) | 3885.342202 | 1.457706e+08 | 12073.550948 | 0.979732 |
+
 
 ✅ **Best Model:** Random Forest Regressor (Based on R² Score)
 
@@ -130,6 +130,5 @@ crop_yield_prediction.ipynb
 ```bash
 📦 crop_yeild
  ┣ 📜 crop_yield_prediction.ipynb
- ┣ 📜 dataset.csv
+ ┣ 📜 yiels_df.csv
  ┣ 📜 README.md
- ┣ 📜 requirements.txt
